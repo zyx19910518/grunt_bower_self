@@ -1,0 +1,29 @@
+{
+  "name": "grunt_bower",
+  "version": "1.0.0",
+  "description": "grunt and bower",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "http-proxy": "latest",
+    "grunt": "~0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-usemin": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-connect-proxy":"latest",
+    "grunt-contrib-livereload":"latest",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-livereload": "latest"
+  },
+  "author": "zhangyx",
+  "license": "ISC"
+}

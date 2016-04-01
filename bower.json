@@ -1,0 +1,22 @@
+{
+  "name": "grunt_bower",
+  "description": "grunt and bower",
+  "main": "index.js",
+  "authors": [
+    "zhangyx"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.3",
+    "jquery": "^2.2.2"
+  }
+}
