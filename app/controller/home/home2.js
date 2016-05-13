@@ -1,1 +1,0 @@
-console.log("home2.js");

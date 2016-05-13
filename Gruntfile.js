@@ -4,10 +4,10 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
+    conf: grunt.file.readJSON('config.json'),
     // 清理目标目录
     clean: {
-      all: ['dist/**']
+      all: ['dist/**','.tmp/**']
     },
     // 将html及图片拷贝至目标目录
     copy: {
@@ -44,9 +44,9 @@ module.exports = function(grunt) {
       },
       generated:{
         files:{
-          'dist/js/home/home.js':['app/controller/home/*.js'],
-          'dist/js/libs.js':['app/libs/**/*.js'],
-          'dist/css/libs.css':['app/libs/**/*.css']
+          '.tmp/concat/js/home/home.js' :['app/controller/home/*.js'],
+          '.tmp/concat/js/libs.js'      :['app/libs/**/*.js'],
+          '.tmp/concat/css/libs.css'    :['app/libs/**/*.css']
         }
       }
     },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
       generated: {
         files: [{
           expand:true,
-          cwd:'dist/js',//js目录下
+          cwd:'.tmp/concat/js',//js目录下
           src:'**/*.js',//所有js文件
           dest: 'dist/js'//输出到此目录下
         }]
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
     'clean', 
     'copy',
     'bower', 
-    'useminPrepare',
+    // 'useminPrepare',
     'concat:generated',
     'uglify:generated',
     'cssmin',

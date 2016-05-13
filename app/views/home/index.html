@@ -1,14 +1,28 @@
-<html>
+<html ng-app="HomeModule">
 	<head>
 		<title>Home Page</title>
 		<meta http-epuiv="Content-Type" content="text/html;charset=utf-8;"></meta>
-		<!-- build:js /js/home/home.js -->
-		<script type="text/javascript" src="/controller/home/home.js"></script>
-		<script type="text/javascript" src="/controller/home/home2.js"></script>
-		<!-- endbuild -->
 	</head>
 	<body>
-		This is home page!
-		<img src="/images/a.jpg">
+		<div>
+			<a href="#/ctrl">controller</a>
+			<a href="#/factory">factory</a>
+			<a href="#/directive">directive</a>
+			<a href="#/ctrl">controller</a>
+			<a href="#/event">event</a>
+		</div>
+		<div ng-view>
+		</div>
+		<!-- build:js /js/libs.js -->
+		<script type="text/javascript" src="/libs/angular/angular.js"></script>
+		<script type="text/javascript" src="/libs/angular-route/angular-route.js"></script>
+		<!-- endbuild -->
+		<!-- build:js /js/home/home.js -->
+		<script type="text/javascript" src="/controller/home/route.js"></script>
+		<script type="text/javascript" src="/controller/home/controller.js"></script>
+		<script type="text/javascript" src="/controller/home/factory.js"></script>
+		<script type="text/javascript" src="/controller/home/directive.js"></script>
+		<script type="text/javascript" src="/controller/home/event.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>

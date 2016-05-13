@@ -1,0 +1,13 @@
+<name></name>
+<div ng-controller="Computer">
+	
+	<input type="text" min=0 ng-model='num1' required ng-change="compute()"/>
+	<select ng-model="operator" required ng-change="compute()">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select>
+	<input type="text" min=0 ng-model='num2' required ng-change="compute()" />
+	=<span ng-bind="result"></span>
+</div>

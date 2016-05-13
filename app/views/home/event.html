@@ -1,0 +1,13 @@
+<div ng-controller="EventCtrl">
+	<span>WapperCount:{{count}}</span>
+	<div ng-controller="EventCtrl">
+		<span>Count:{{count}}</span>
+		<div>
+			<input type="button" ng-click="$emit('Event')" value="Emit">
+			<input type="button" ng-click="$broadcast('Event')" value="Broadcust">
+		</div>
+		<div ng-controller="EventCtrl">
+			<span>SurroundedCount:{{count}}</span>
+		</div>
+	</div>
+</div>
