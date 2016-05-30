@@ -103,13 +103,13 @@ module.exports = function(grunt) {
         options: {
           hostname:'localhost',
           port: 9001,
-          livereload: true,
+          livereload: 35728,
           base:['app','app/views'],
           middleware: require('./lib/middleware')
         },
         proxies: [{
           context: '/data',
-          host: 'shop-dev3.fun.tv',
+          host: 'localhost',
           changeOrigin: true,
           port: 80
         }]
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
     watch:{
       html:{
         files:['app/views/**/*.html'],
-        options: {livereload:true}
+        options: {livereload:35728}
       }
     }
   });

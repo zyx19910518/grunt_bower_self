@@ -1,4 +1,10 @@
 {
-	"prefix" : "/server",
-	"target" : "http://shop-dev.fun.tv"
+	"proxy" : {
+		"prefix" : "/server",
+		"target" : "localhost",
+		"port" : 80
+	},
+	"livereload" : {
+		"port": 35729
+	}
 }
